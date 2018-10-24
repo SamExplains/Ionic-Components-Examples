@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Components
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,4 +11,14 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+
+  <button (click)="onClick()" ion-button color="secondary" >A buttons</button>
+
+  <button (click)="onClick()" ion-button outline >Second buttons</button>
+
+  <button (click)="onClick()" ion-button block color="primary" >Block buttons</button>
+
+  <button (click)="onClick()" ion-button block color="primary" ><ion-icon name="home" icon-only></ion-icon></button>
+
+
 </ion-content>
