@@ -72,4 +72,11 @@
     <ion-item *ngFor="let item of items ">{{item}}</ion-item>
   </ion-list>
 
+
+  <ion-item-group>
+    <button ion-item (click)="onElementClicked()">Click Event</button>
+    <button ion-item  (tap)="onElementTapped">Tap Event</button>
+    <button ion-item (press)="onElementPressed()">Press Event</button>
+  </ion-item-group>
+
 </ion-content>

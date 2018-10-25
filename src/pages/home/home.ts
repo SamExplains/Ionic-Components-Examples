@@ -21,4 +21,17 @@ export class HomePage {
     this.items = reorderArray(this.items, index);
   }
 
+  onElementClicked(){
+    console.log('Click');
+  }
+
+  onElementTapped(){
+    console.log('Tapped');
+  }
+
+  onElementPressed(){
+    console.log('Pressed');
+  }
+
+
 }
