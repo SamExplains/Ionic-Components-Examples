@@ -21,4 +21,46 @@
   <button (click)="onClick()" ion-button block color="primary" ><ion-icon name="home" icon-only></ion-icon></button>
 
 
+  <!--Ion list-->
+  <ion-list>
+    <ion-item>A normal item</ion-item>
+    <button ion-item="">
+      <h5>Look a heading</h5>
+      <ion-icon name="star" item-left></ion-icon>
+      Button with item</button>
+  </ion-list>
+
+  <!--Ion list with no lines-->
+  <ion-list no-lines="">
+    <ion-item inset>A</ion-item>
+    <ion-item>B</ion-item>
+    <ion-item>C</ion-item>
+  </ion-list>
+
+  <!--Grouped List-->
+  <!--Ionic expects to have multiple groups of items-->
+  <ion-item-group>
+    <ion-item-divider>A</ion-item-divider>
+      <ion-item inset>Pizza</ion-item>
+    <ion-item-divider>B</ion-item-divider>
+      <ion-item>Milkshake</ion-item>
+    <ion-item-divider>C</ion-item-divider>
+      <ion-item>Juice</ion-item>
+  </ion-item-group>
+
+
+  <ion-list>
+    <ion-list-header>Gymnasium</ion-list-header>
+    <ion-item>Jogging</ion-item>
+    <ion-item>Weights</ion-item>
+  </ion-list>
+
+  <!--Re orderable list-->
+
+<ion-list reorder="true" (ionItemReorder)="reorderListItems($event)" >
+
+  <ion-item *ngFor="let item of items ">{{item}}</ion-item>
+</ion-list>
+
+
 </ion-content>
