@@ -72,11 +72,9 @@
     <ion-item *ngFor="let item of items ">{{item}}</ion-item>
   </ion-list>
 
+  <!-- Custom template component -->
+  <!--No need to add as an entry component @ modules because its a literal component-->
+  <app-touch-event></app-touch-event>
 
-  <ion-item-group>
-    <button ion-item (click)="onElementClicked()">Click Event</button>
-    <button ion-item  (tap)="onElementTapped">Tap Event</button>
-    <button ion-item (press)="onElementPressed()">Press Event</button>
-  </ion-item-group>
 
 </ion-content>
